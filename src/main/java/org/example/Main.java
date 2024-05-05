@@ -57,7 +57,7 @@ public class Main {
             }
 
 
-        } while (!choix.equals("0"));
+        } while (true);
 
     }
 }

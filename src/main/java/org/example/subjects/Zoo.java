@@ -78,6 +78,10 @@ public class Zoo implements Subject{
     }
 
     public void visiteZoo() {
+        if (animals.isEmpty()) {
+            System.out.println("Le zoo est vide.");
+            return;
+        }
         for (Animal animal : animals) {
             System.out.println("Je suis un " + animal.getClass().getSimpleName());
 
